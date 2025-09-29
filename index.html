@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Contato - Barbearia Alura</title>
+
+		<title>Barbearia Alura</title>
 
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="style.css">
+
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<header>
@@ -23,77 +26,48 @@
 			</div>
 		</header>
 
+		<img class="banner" src="banner.jpg">
+
 		<main>
-			<form>
-				<label for="nomesobrenome">Nome e sobrenome</label>
-				<input type="text" id="nomesobrenome" class="input-padrao" required>
+			<section class="principal">
+				<h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
+				
+				<img class="utensilios" src="utensilios.jpg" alt="Utensilios de um barbeiro.">
 
-				<label for="email">Email</label>
-				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+				<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
+	
+				<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+	
+				<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+			</section>
 
-				<label for="telefone">Telefone</label>
-				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+			<section class="mapa">
+				<div class="mapa-conteudo">
+					<h3 class="titulo-principal">Nosso estabelecimento</h3>
+					<p>Nosso estabalecimento está localizado no coração da cidade.</p>
+	
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.449840636517!2d-46.634901460846514!3d-23.588194778869617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59541c6c79c3%3A0x36b90a85f0f8cb33!2sAlura!5e0!3m2!1spt-BR!2sbr!4v1758828400371!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</section>
+	
+			<section class="beneficios">
+				<h3 class="titulo-principal">Benefícios</h3>
+	
+				<div class="conteudo-beneficios">
+					<ul class="lista-beneficios">
+						<li class="itens">Atendimento aos Clientes</li>
+						<li class="itens">Espaço diferenciado</li>
+						<li class="itens">Localização</li>
+						<li class="itens">Profissionais Qualificados</li>
+						<li class="itens">Pontualidade</li>
+						<li class="itens">Limpeza</li>
+					</ul><img class="imagembeneficios" src="beneficios.jpg">
+				</div>
 
-				<label for="mensagem">Mensagem</label>
-				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
-
-				<fieldset>
-					<legend>Como prefere o nosso contato?</legend>
-					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
-					
-					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
-					
-					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
-				</fieldset>
-
-				<fieldset>
-					<legend>Qual horário prefere ser atendido?</legend>
-					<select>
-						<option>Manhã</option>
-						<option>Tarde</option>
-						<option>Noite</option>
-					</select>
-				</fieldset>
-
-				<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
-
-				<input type="submit" value="Enviar formulário" class="enviar">
-			</form>
-
-			<table>
-				<thead>
-					<tr>
-						<th>Dia</th>
-						<th>Horário</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Segunda</td>
-						<td>8h ~ 20h</td>
-					</tr>
-					<tr>
-						<td>Terça</td>
-						<td>8h ~ 20h</td>
-					</tr>
-					<tr>
-						<td>Quarta</td>
-						<td>8h ~ 20h</td>
-					</tr>
-					<tr>
-						<td>Quinta</td>
-						<td>8h ~ 20h</td>
-					</tr>
-					<tr>
-						<td>Sexta</td>
-						<td>8h ~ 20h</td>
-					</tr>
-					<tfoot>
-					<tr><td colspan="2">Sabado ~ Fechado</td></tr>
-					<tr><td colspan="2">Domingo ~ Fechado</td></tr>
-					</tfoot>
-				</tbody>
-			</table>
+				<div class="video">
+					<iframe width="100%" height="315" src="https://www.youtube.com/embed/tPBTRJ6CaKM?si=ijBuFHcxQrpxLBMV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+			</section>
 		</main>
 
 		<footer>
